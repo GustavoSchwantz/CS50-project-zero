@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+    </head>
+    <style>
+        #vertical-center {
+            /* vertical center */
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            /* vertical center */
+            width: 100%;    
+        }
+
+        #main-div {
+            text-align: center;
+        }
+
+        #links {
+            text-align: right;
+        }
+
+        #search-bar {
+            height: 45px;
+            width: 50%;
+            border-radius: 30px;
+        }
+
+        #buttons-div {
+            margin-top: 25px;
+        }
+
+        #search-button {
+            margin-right: 5px;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div id="links">
+            <a href="search.html">Google Search</a>
+        </div>
+        <form id="vertical-center" action="https://www.google.com.br/search">
+            <div id="main-div" >
+                <input id="search-bar" type="text" name="q">
+                <div id="buttons-div">
+                    <input type="hidden" name="tbm" value="isch">
+                    <input id="search-button" type="submit" value="Google Search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
